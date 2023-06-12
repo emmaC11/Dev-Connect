@@ -10,3 +10,7 @@ class PostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug':('title',)}
     summernote_fields = ('content')
     search_fields = ['title', 'content']
+
+@admin.register(Comment)
+
+class CommentAdmin(admin.ModelAdmin):
