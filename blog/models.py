@@ -18,7 +18,7 @@ class Post(models.Model):
 
     class Meta:
         # order posts/articles via created on field
-        post_order = ['-created_on']
+        ordering = ['-created_on']
 
     def __str__(self):
         return self.title
