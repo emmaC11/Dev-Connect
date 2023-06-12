@@ -14,3 +14,13 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='devconnect_likes', blank=True)
 
+    class Meta:
+        # order posts/articles via created on field
+        post_order = ['-created_on']
+
+    def __str__(self):
+        return self.title
+
+    def like_count(self):
+        return self.likes.count()
+
