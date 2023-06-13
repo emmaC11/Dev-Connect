@@ -14,3 +14,10 @@
     padding:0;
     border:0;
 }
+
+body{
+    font-family: 'NTR', sans-serif;
+    background-color: var(--navy);
+    color: var(--white);
+    margin: 0 30px 0 30px;  
+}
