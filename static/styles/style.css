@@ -21,3 +21,11 @@ body{
     color: var(--white);
     margin: 0 30px 0 30px;  
 }
+
+.nav-link{
+    color: var(--green);
+}
+
+.nav-link:hover{
+    color: var(--green);
+}
