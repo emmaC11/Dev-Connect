@@ -44,7 +44,11 @@
           </nav>
     </nav>
 
-    
+    <main class="flex-shrink-0 main-bg">
+      {% block content %}
+      <!-- content from index.html -->
+      {% endblock content %}
+  </main>
 
     <footer class="footer">
       <div class="container text-center">
