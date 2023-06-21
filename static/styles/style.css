@@ -29,3 +29,8 @@ body{
 .nav-link:hover{
     color: var(--green);
 }
+
+.card{
+    background-color: var(--light-navy);
+    border: 1px solid var(--green);
+}
