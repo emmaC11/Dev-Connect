@@ -12,7 +12,7 @@
                 {% for post in post_list %}
                 <p>{{post.title}}</p>
                 <!-- we will use built in loop counter to close existing row div, & add a new one after 6 posts have been displayed -->
-                {%if forloop.counter|divisible:3 %}
+                {%if forloop.counter|divisibleby:3 %}
             </div>
         </div>
     </div>
