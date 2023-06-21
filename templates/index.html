@@ -9,14 +9,19 @@
         <div class="col-12 mt-3 left">
             <div class="row">
                 <!-- creating a for loop of list of posts that will be passed in from our view  -->
-               {% for post in post_list %}
-               <p>{{post.title}}</p>
+                {% for post in post_list %}
+                <p>{{post.title}}</p>
+                <!-- we will use built in loop counter to close existing row div, & add a new one after 6 posts have been displayed -->
+                {%if forloop.counter|divisible:3 %}
             </div>
         </div>
     </div>
-    <div class="row">
-        {% endfor %}
-    </div>
+</div>
+
+<div class="row">
+    {% endif %}
+    {% endfor %}
+</div>
 </div>
 
 {%endblock%}
