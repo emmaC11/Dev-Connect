@@ -9,3 +9,5 @@ class PostListView(generic.ListView):
     paginate_by = 6
 
 class PostContentView(View):
+    def get(self, request, slug, *args, **kwargs):
+        
