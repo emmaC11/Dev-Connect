@@ -17,3 +17,9 @@ class PostContentView(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
+        # pass info to render method
+        return render(request, "post_content.html", {
+            "post": post,
+            "comments": comments,
+            "liked": liked
+        },)
