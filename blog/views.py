@@ -10,4 +10,5 @@ class PostListView(generic.ListView):
 
 class PostContentView(View):
     def get(self, request, slug, *args, **kwargs):
-        
+        queryset = Post.objects.filter(status=1)
+
