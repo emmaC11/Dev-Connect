@@ -22,7 +22,7 @@
                             </lord-icon>
                         </div>
                         <div class="card-body">
-                                <h2 class="card-title">{{post.title}}</h2>
+                            <a href="{% url 'post_content' post.slug%}" class="post-link"> <h2 class="card-title">{{post.title}}</h2></a>
                                 <p class="card-text">excerpt</p>
                            
                             <hr />
