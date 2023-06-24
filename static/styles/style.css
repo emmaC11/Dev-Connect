@@ -34,3 +34,8 @@ body{
     background-color: var(--light-navy);
     border: 1px solid var(--green);
 }
+
+.post-links{
+    text-decoration: none;
+    color: var(--green);
+}
