@@ -53,3 +53,8 @@ body{
     height: 33vh;
     width: 100%;
 }
+
+.card-post{
+    border: 0.5px solid var(--green);
+    border-radius: 15px;
+}
