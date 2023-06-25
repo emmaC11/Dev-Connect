@@ -62,3 +62,14 @@ body{
 .card-comment{
    
 }
+
+ /* ABOUT PAGE */
+ .about-heading{
+    margin-top: 5px;
+    color: var(--green);
+ }
+
+ .about-para{
+    text-align: left;
+ }
+ 
