@@ -73,3 +73,7 @@ body{
     margin-top: 5px;
     color: var(--green);
   }
+
+  ul li::marker {
+    color: var(--grey);
+  }
