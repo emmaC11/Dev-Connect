@@ -64,7 +64,7 @@ body{
 }
 
  /* ABOUT PAGE */
- .about-heading, .login-heading{
+  .page-heading{
     margin-top: 5px;
     color: var(--green);
  }
