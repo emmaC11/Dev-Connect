@@ -86,3 +86,12 @@ input{
     border-radius: 5px;
     color: var(--green);
 }
+
+.form-btn{
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.form-btn:hover{
+   background-color: var(--green);
+}
