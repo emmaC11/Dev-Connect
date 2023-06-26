@@ -96,3 +96,8 @@ input{
 .form-btn:hover{
    background-color: var(--green);
 }
+
+.comment-form{
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+}
