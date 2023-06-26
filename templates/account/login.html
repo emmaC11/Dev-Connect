@@ -10,13 +10,13 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h1 class="page-heading">{% trans "/ Login" %}</h1><hr>
+      <h1 class="page-heading">{% trans "/ login" %}</h1><hr>
 
       <p>{% blocktrans %}Welcome to Dev Connect! This platform connects developers and empowers innovation. Here, you
         can find
         resources, tips, and insights to enhance your coding journey. To like posts & leave comments, please login. If
         you have not created an account yet, then please
-        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
+        <a href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
     </div>
   </div>
 
@@ -29,7 +29,7 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn form-btn" type="submit">{% trans "Sign In" %}</button>
+        <button class="btn form-btn" type="submit">{% trans "login" %}</button>
       </form>
     </div>
   </div>
