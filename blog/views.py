@@ -38,7 +38,7 @@ class PostContentView(View):
         if comment_content.is_valid():
             # get user details
             comment_content.instance.email = request.user.email
-            comment_content.instance.name = requst.user.name
+            comment_content.instance.name = request.user.name
             comment = comment_content.save(commit=False)
             comment.post = post
             comment.save()
