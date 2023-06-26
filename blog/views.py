@@ -22,5 +22,6 @@ class PostContentView(View):
         return render(request, "post_content.html", {
             "post": post,
             "comments": comments,
-            "liked": liked
+            "liked": liked,
+            "comment_form": UserCommentForm()
         },)
