@@ -34,9 +34,17 @@ class PostContentView(View):
         comments = post.comments.filter(approved=True).order_by('created_on')
         liked = False
         comment_content = UserCommentForm(data=request.POST)
+        if comment_content.is_valid():
+            # get user details
+            comment_content.instance.email = request.user.email
+            comment_content.instance.name = requst.user.name
+            comment = comment_content.save(commit=False)
+            comment.post = post
+            comment.save()
+
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-
+        
         # pass info to render method
         return render(request, "post_content.html", {
             "post": post,
