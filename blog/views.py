@@ -41,6 +41,8 @@ class PostContentView(View):
             comment = comment_content.save(commit=False)
             comment.post = post
             comment.save()
+        else:
+            comment_content = UserCommentForm()
 
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
