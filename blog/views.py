@@ -24,6 +24,7 @@ class PostContentView(View):
         return render(request, "post_content.html", {
             "post": post,
             "comments": comments,
+            "commented": False,
             "liked": liked,
             "comment_form": UserCommentForm()
         },)
@@ -51,6 +52,7 @@ class PostContentView(View):
         return render(request, "post_content.html", {
             "post": post,
             "comments": comments,
+            "commented": True,
             "liked": liked,
             "comment_form": UserCommentForm()
         },)
