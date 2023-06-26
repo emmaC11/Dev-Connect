@@ -2,18 +2,18 @@
 
 {% load i18n %}
 
-{% block head_title %}{% trans "Signup" %}{% endblock %}
+{% block head_title %}{% trans "/ register" %}{% endblock %}
 
 {% block content %}
 
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h1 class="page-heading">{% trans "Sign Up" %}</h1><hr>
+      <h1 class="page-heading">{% trans "/ register" %}</h1><hr>
 
       <p>{% blocktrans %} Welcome to Dev Connect! This platform connects developers and empowers innovation. Here, you
         can find
-        resources, tips, and insights to enhance your coding journey. Create an account below to get started! Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+        resources, tips, and insights to enhance your coding journey. Create an account below to get started! Already have an account? Then please <a href="{{ login_url }}">login</a>.{% endblocktrans %}
       </p>
     </div>
   </div>
@@ -26,7 +26,7 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn form-btn" type="submit">{% trans "Sign Up" %} </button>
+        <button class="btn form-btn" type="submit">{% trans "register" %} </button>
       </form>
     </div>
   </div>
