@@ -64,7 +64,7 @@ body{
 }
 
  /* ABOUT PAGE */
- .about-heading{
+ .about-heading, .login-heading{
     margin-top: 5px;
     color: var(--green);
  }
@@ -77,3 +77,12 @@ body{
   ul li::marker {
     color: var(--grey);
   }
+
+  /* STYLING TO INPUT FIELDS ON FORMS */
+input{
+    margin-left: 5px;
+    background-color: transparent;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    color: var(--green);
+}
