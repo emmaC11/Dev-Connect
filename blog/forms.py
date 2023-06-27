@@ -5,3 +5,7 @@ class UserCommentForm(forms.ModelForm):
     class Meta:
         model = Comment
         fields = ('body',)
+
+class UserPostForm(forms.ModelForm):
+    class Meta:
+        model = Post
