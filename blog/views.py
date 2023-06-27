@@ -59,3 +59,8 @@ class PostContentView(View):
             "liked": liked,
            
         },)
+
+
+    class PostLikeView(View):
+        def post(self, request, slug):
+            
