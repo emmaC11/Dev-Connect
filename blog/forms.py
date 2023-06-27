@@ -24,3 +24,6 @@ class UserPostForm(forms.ModelForm):
         widgets = {
             'content': SummernoteInplaceWidget()
         }
+
+        def __init__(self, *args, **kwargs):
+            super(UserPostForm, self).__init__(*args, **kwargs)
