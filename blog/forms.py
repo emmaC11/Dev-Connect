@@ -9,3 +9,9 @@ class UserCommentForm(forms.ModelForm):
 class UserPostForm(forms.ModelForm):
     class Meta:
         model = Post
+        fields = [
+            'title',
+            'content',
+            'category',
+            'image'
+        ]
