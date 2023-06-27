@@ -102,6 +102,7 @@ input{
     border-radius: 5px;
 }
 
-.card-comment{
-    color: white;
+.btn-like, .far.fa-comments{
+    color: var(--purple);
+    background-color: transparent;
 }
