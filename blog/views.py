@@ -34,6 +34,9 @@ class PostContentView(View):
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
         liked = False
+        if post.likes.filter(id=self.request.user.id).exists():
+            liked = True
+        
         comment_content = UserCommentForm(data=request.POST)
         if comment_content.is_valid():
             # get user details
@@ -45,14 +48,14 @@ class PostContentView(View):
         else:
             comment_content = UserCommentForm()
 
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
+        
         
         # pass info to render method
         return render(request, "post_content.html", {
             "post": post,
             "comments": comments,
             "commented": True,
+            "comment_form": comment_content,
             "liked": liked,
-            "comment_form": UserCommentForm()
+           
         },)
