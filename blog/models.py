@@ -31,7 +31,7 @@ class Comment(models.Model):
     fname = models.CharField(max_length=80)
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    approved = models.BooleanField(default=False)
+    approved = models.BooleanField(default=True)
 
     class Meta:
         # order comments via created on field - ascending order
