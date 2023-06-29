@@ -47,7 +47,40 @@ This platform connects developers and empowers innovation. Here, you can find re
 * As a first time user, I want to comment on posts on dev connect.
 * As a first time user, I want to edit comments on posts on dev connect.
 * As a first time user, I want to delete comments on posts on dev connect.
+* As a first time user, I want to navigate between content on dev connect.
 * As a first time user, I want to view the website on all my devices (Iphone 10, Surface Pro 7+, 32 inch monitor).
 * As an admin user, I want to create new posts on dev connect.
 * As an admin user, I want to  delete posts on dev connect.
 * As an admin user, I want to delete comments posts on dev connect.
+
+## Structure
+
+The home screen of Dev Connect presents users with intuitive navigation options. Three prominent buttons are available, enabling users to perform different actions. Users can choose to create an account, log in to an existing account, or explore and interact with posts.
+> As a first time user, I want to navigate between content on dev connect.
+
+A user registration form is displayed when a user selects the 'register' button. This allows users to provide the required information and create their account on Dev Connect.
+> As a first time user, I want to create an account on dev connect.
+
+Users who already have an account can use the 'login' navigation option. This will direct them to the login page where they can enter their credentials and access their account.
+> As a first time user, I want to login to my account on dev connect.
+
+Users can engage with posts on Dev Connect by liking or unliking them. By selecting the 'like' icon, users can express their appreciation for a particular post. If they change their mind or mistakenly liked a post, they can click the like icon again to remove their like.
+> As a first time user, I want to like posts on dev connect.
+> As a first time user, I want to unlike posts on dev connect.
+
+Dev Connect allows users to share their thoughts, ideas, and experiences by commenting on posts. By filling out the comment form located at the end of a post.
+> As a first time user, I want to comment on posts on dev connect.
+
+Users have the ability to edit & delete their comments on Dev Connect. By selecting the 'edit' or 'delete' button associated with their comment.
+> As a first time user, I want to edit comments on posts on dev connect.
+> As a first time user, I want to delete comments on posts on dev connect.
+
+Dev Connect is designed to be responsive and compatible with various devices. The website was designed using Bootstrap to ensure all pages are responsive regardless of device/screen-size.
+>  As a first time user, I want to view the website on all my devices (Iphone 10, Surface Pro 7+, 32 inch monitor).
+
+Admin users have the capability to create new posts on Dev Connect. By accessing the django admin panel via the navigation bar, they can compose and publish posts with relevant content and information.
+> As an admin user, I want to create new posts on dev connect.
+
+Admin users also have the authority to delete posts & comments from Dev Connect. If a post violates community guidelines or is deemed inappropriate, an admin user can take action by selecting the 'delete' option associated with the post & comment.
+> As an admin user, I want to  delete posts on dev connect.
+> As an admin user, I want to delete comments posts on dev connect.
