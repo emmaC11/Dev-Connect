@@ -12,6 +12,13 @@
                 <h1 class="post-title">{{post.title}}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
                 <p class="post-subtitle">{{ post.author }} | {{ post.created_on }}</p>
+                {% if request.user.username == 'admin' %}
+                <form action="{% url 'delete_post' post.slug %}" method="post" class="d-inline">
+                    {% csrf_token %}
+                    <input type="hidden" name="post_slug" value="{{ post.slug }}">
+                    <button type="submit" class="btn btn-sm form-btn">Delete</button>
+                </form>
+                {% endif %}
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- The featured image URL goes in the src attribute -->
