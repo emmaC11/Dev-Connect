@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
+from django.views.generic.edit import DeleteView
 from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
 from .models import Post, Comment
 from .forms import UserCommentForm
 
@@ -72,6 +74,11 @@ class PostLikeView(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
+
+class DeletePostView(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('homepage')
 
 
 class DeleteCommentView(View):
