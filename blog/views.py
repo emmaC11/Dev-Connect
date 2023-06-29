@@ -88,9 +88,6 @@ class DeleteCommentView(View):
             comment.delete()
         elif request.user.username == 'admin':
             comment.delete()
-        else:
-            print('ttt')
-            # call 404
 
         return redirect(request.META.get("HTTP_REFERER"))
 
