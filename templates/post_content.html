@@ -89,7 +89,7 @@
                     <!-- The body of the comment goes before the | -->
                     {{comment.body}}
                      {% if request.user.username == comment.fname or request.user.username == 'admin' %}
-                    <form action="{% url 'delete_comment' comment.id %}" method="post" class="mt-2">
+                    <form action="{% url 'delete_comment' comment.id %}" method="post" class="d-inline">
                         {% csrf_token %}
                         <input type="hidden" name="comment_id" value="{{ comment.id }}">
                         <button type="submit" class="btn btn-sm form-btn">Delete</button>
@@ -98,7 +98,7 @@
 
                     <!-- edit comment -->
                     {% if request.user.username == comment.fname or request.user.username == 'admin' %}
-                    <form action="{% url 'edit_comment' comment.id %}" method="get" class="mt-2">
+                    <form action="{% url 'edit_comment' comment.id %}" method="get" class="d-inline">
                         <button type="submit" class="btn btn-sm form-btn">Edit</button>
                     </form>
                     {% endif %}
