@@ -58,6 +58,15 @@ body{
 .card-post{
     border: 0.5px solid var(--green);
     border-radius: 15px;
+   
+}
+
+.post-content {
+    color: white;
+}
+
+.card-text{
+    color: var(--white);
 }
 
 .card-comment{
