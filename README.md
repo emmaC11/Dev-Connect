@@ -231,3 +231,33 @@ I used the following commands throughout the development of this project:
 16. Scroll down to the bottom of the “Deploy” Page and select the type of deployment you want to conduct. If you opt to “Automatically Deploy”, it will deploy every time you push new code to your repository. Otherwise, you will have to manually deploy, by selecting the button at the bottom of the page.
 17. The application is now deployed!
 
+# **Credits/References**
+
+## Technologies Used
+* [Django Framework](https://www.djangoproject.com/#:~:text=Django%20is%20a%20high%2Dlevel,It's%20free%20and%20open%20source.)
+* [Python](https://www.python.org/)
+* [Heroku](https://dashboard.heroku.com/apps)
+* [Cloudinary](https://cloudinary.com)
+* [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
+* [Google Fonts](https://fonts.google.com/)
+* [Github](https://github.com/emmaC11/PP1-starwars)
+* [GitPod](https://gitpod.io/)
+* [Font Awesome](https://fontawesome.com/)
+* [Lordicon](https://lordicon.com/icons/wired/outline?categoryId=3&premium=0)
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+* [W3C HTML Validator](https://validator.w3.org/#validate_by_input)
+
+## Content & Media
+* Animated folder icon in header is from [Lordicon](https://lordicon.com/icons/wired/outline?categoryId=3&premium=0)
+* NRT font is imported from [Google Fonts](https://fonts.google.com/)
+* Default [image](https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg) from CI blog
+
+## Code
+* I referenced the sample blog from [CI content]((https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/)), this provided helpful snippets throughout my project for layouts, views, models, etc
+* I used chat-gpt to generate sample content for my site & to write content for readme. I also used it to troubleshoot different errors such as line too long & errors in views etc. It was very helpful when working on the edit comment feature.
+* I referenced the following GitHub repo's throughout for guidance, VeganEat helped with the delete comment functionality. All wonderful ladies! [VeganEat](https://github.com/KarinOldbring/vegan-a-eat/tree/main),[F1 Booking System](https://github.com/Grawnya/f1-dublin-race-ticket-booking-system/tree/main#heroku-deploy), [Where-Next](https://github.com/AngMaher/PP4-Where-Next/)
+
+
+
+
