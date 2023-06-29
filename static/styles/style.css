@@ -33,6 +33,7 @@ body{
 .card{
     background-color: var(--light-navy);
     border: 1px solid var(--green);
+    height: 100%;
 }
 
 .post-links{
