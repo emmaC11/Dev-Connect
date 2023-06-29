@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
@@ -73,6 +73,17 @@ class PostLikeView(View):
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
 
+
 class DeleteCommentView(View):
-    def post(self, request, *args, **kwargs):       
-        
+    def post(self, request, *args, **kwargs):
+        comment_id = request.POST.get("comment_id")
+        comment = get_object_or_404(Comment, id=comment_id)
+
+        # Check if the user is authorised to delete the comment
+        if comment.fname == request.user.username:
+            comment.delete()
+        else:
+            print('ttt')
+            # call 404
+
+        return redirect(request.META.get("HTTP_REFERER"))
