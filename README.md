@@ -182,3 +182,12 @@ When I tested my website, an audit report was returned indicating that my websit
 ![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/a41f9e86-5a3b-4d27-94a5-99dfcc3cd5be)
 * Some of my commit messages are way to vague, several commits have comments as I only realise after I complete a git push that several files & lines have been edited. Towards the end of dev, I used the source control feature within VS to write meaningful commit messages & see which files were edited.
 * Delete comments & posts is not functional within admin panel. This is a UI feature.
+
+# **Development Environment**
+## Dev Structure
+* The first step for this PP4 project was to come up with the project idea, I always liked the idea of a blog, but wanted to feel content with the site purpose. I enjoy watching fun tech related content on tiktok so this is where I decided to create a site with tech related content for junior developers.
+* I then moved on to creating some wireframes. I have learned from previous projects that having a good plan before writing any lines of code is critical. I worked on the django walkthrough project & referenced that heavily in the early stages during project setup.
+* I created my user stories within my onenote & some on GitHub issues.
+* I kept a onenote notebook to log all notes from CI content, links etc associated with PP4. This help me keep track of what resources I used, masterclass notes & bugs tracked throughout the development cycle.
+
+![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/28e89c50-4dc6-4bfe-af66-a6da0c5251a1)
