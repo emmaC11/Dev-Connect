@@ -178,4 +178,7 @@ When I tested my website, an audit report was returned indicating that my websit
 * Posts were displaying vertically not horizontally, as I had an extra row class within my container.
 * My style changes were not reflecting on my html files, as I did not clear cache & was using incorrect css path. I was not using Jinja syntax - {% static 'styles/style.css' %}
 * When trying to install allauth & identify python version, I did not include '.' within slash & pip ../.pip-modules/lib.
-* Delete comments & posts is not functional within admin panel. This is UI feature.
+* Some of my commit messages have spelling errors, however this is due to an issue with the bash terminal. I type the commit message correctly however it is changed after I confirm the commit.
+![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/a41f9e86-5a3b-4d27-94a5-99dfcc3cd5be)
+* Some of my commit messages are way to vague, several commits have comments as I only realise after I complete a git push that several files & lines have been edited. Towards the end of dev, I used the source control feature within VS to write meaningful commit messages & see which files were edited.
+* Delete comments & posts is not functional within admin panel. This is a UI feature.
