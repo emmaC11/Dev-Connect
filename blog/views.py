@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Comment
 from .forms import UserCommentForm
 
 
@@ -73,5 +73,6 @@ class PostLikeView(View):
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
 
-        
+class DeleteCommentView(View):
+    def post(self, request, *args, **kwargs):       
         
