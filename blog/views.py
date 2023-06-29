@@ -39,7 +39,6 @@ class PostContentView(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-        
         comment_content = UserCommentForm(data=request.POST)
         if comment_content.is_valid():
             # get user details
@@ -51,8 +50,6 @@ class PostContentView(View):
         else:
             comment_content = UserCommentForm()
 
-        
-        
         # pass info to render method
         return render(request, "post_content.html", {
             "post": post,
@@ -60,7 +57,6 @@ class PostContentView(View):
             "commented": True,
             "comment_form": comment_content,
             "liked": liked,
-           
         },)
 
 
@@ -74,6 +70,7 @@ class PostLikeView(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_content', args=[slug]))
+
 
 class DeletePostView(DeleteView):
     model = Post
