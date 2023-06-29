@@ -149,3 +149,33 @@ The register page in Dev Connect allows new users to create an account and join 
 
 # Admin Panel
 The admin super user can add posts within the posts section. One thing to note is that the text content needs to be white to ensure it will be visible over the dark background. Post content can be edited here. Admins can create draft posts via admin panel. Posts & comments can be deleted via UI.
+
+# **Testing**
+## Validator Testing
+add content
+
+## Manual Testing
+add content
+
+## Responsive Testing
+* The website was tested on several devices and screen sizes to ensure it was responsvie regardless of the screen size. It has been tested on desktop, Ipad Mini, Ipad Air, Iphone 5, Samsung Galaxy S8+, Iphone X, Iphone SE. Mobile devices have been tested in portrait and landscape mode. The site has been tested in Chrome, Edge, FireFox & Brave browsers.
+
+## Lighthouse Testing
+* The Lighthouse tool in Chrome DevTools is used to test a websites performance & accessibility. It is an open-source automated tool used to improve the quality of webpages. 
+When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
+![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/2aa9a132-6c3a-4d07-8a3c-d1959a08ba0a)
+
+## Bugs Identified During Development & Testing
+* Site would not run locally as I did not have gitpod server in allowed_hosts.
+* Heroku deployment was failing as I did not have commas inbetween installed_apps in settings.py.
+![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/4137e353-fa19-4462-ab38-aea9c7d003e2)
+* Heroku deployment was failing as I did add the disable_collectstatic config var
+* Missing capital latters when import django models
+![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/cab23185-3c00-44a2-a957-34d2af1b1a66)
+* Missing endblock tags in html template, fixed by adding {%endblock%} tag at end of HTML code.
+* Content from base.html was not displaying in index.html as I did not add block content tags to base.html
+* Several times I forgot to close loops & if statements, best practise was going line by line to ensure the conditional or loop was closed when required,
+* Posts were displaying vertically not horizontally, as I had an extra row class within my container.
+* My style changes were not reflecting on my html files, as I did not clear cache & was using incorrect css path. I was not using Jinja syntax - {% static 'styles/style.css' %}
+* When trying to install allauth & identify python version, I did not include '.' within slash & pip ../.pip-modules/lib.
+* Delete comments & posts is not functional within admin panel. This is UI feature.
