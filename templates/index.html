@@ -4,8 +4,6 @@
 
 <div class="container-fluid">
     <div class="row">
-        <p>this is the index.html file</p>
-        <!-- Blog Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
                 <!-- creating a for loop of list of posts that will be passed in from our view  -->
@@ -22,7 +20,6 @@
                         </div>
                         <div class="card-body">
                             <a class="post-links" href="{% url 'post_content' post.slug%}" class="post-link"> <h2 class="card-title">{{post.title}}</h2></a>
-                                <p class="card-text">excerpt</p>
                             <hr />
                             <p class="card-text text-muted h6">{{post.category}}</p>
                         </div>
@@ -45,6 +42,4 @@
     </nav>
     {% endif %}
 </div>
-
-
 {%endblock%}
