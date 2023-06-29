@@ -92,7 +92,14 @@
                     <form action="{% url 'delete_comment' comment.id %}" method="post" class="mt-2">
                         {% csrf_token %}
                         <input type="hidden" name="comment_id" value="{{ comment.id }}">
-                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        <button type="submit" class="btn btn-sm form-btn">Delete</button>
+                    </form>
+                    {% endif %}
+
+                    <!-- edit comment -->
+                    {% if request.user.username == comment.fname or request.user.username == 'admin' %}
+                    <form action="{% url 'edit_comment' comment.id %}" method="get" class="mt-2">
+                        <button type="submit" class="btn btn-sm form-btn">Edit</button>
                     </form>
                     {% endif %}
                 </div>
@@ -112,7 +119,6 @@
                      {% csrf_token %}
                      <button class="btn form-btn mt-2 mb-2" type="submit" class="btn btn-signup btn-lg ">Submit</button>
                  </form>
-                 
                  {% endif %}
             </div>
         </div>
