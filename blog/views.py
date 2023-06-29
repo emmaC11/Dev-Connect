@@ -89,3 +89,19 @@ class DeleteCommentView(View):
             # call 404
 
         return redirect(request.META.get("HTTP_REFERER"))
+
+
+class EditCommentView(View):
+    def get(self, request, comment_id, *args, **kwargs):
+        comment = get_object_or_404(Comment, id=comment_id)
+        # body field has current comment body
+        edit_form = UserCommentForm(initial={'body': comment.body})
+        return render(request, 'edit_comment.html', {'form': edit_form})
+
+    def post(self, request, comment_id, *args, **kwargs):
+        comment = get_object_or_404(Comment, id=comment_id)
+        edit_form = UserCommentForm(request.POST, instance=comment)
+        if edit_form.is_valid():
+            edit_form.save()
+            return redirect('post_content', slug=comment.post.slug)
+        return render(request, 'edit_comment.html', {'form': edit_form})
