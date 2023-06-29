@@ -19,7 +19,7 @@ body{
     font-family: 'NTR', sans-serif;
     background-color: var(--navy);
     color: var(--white);
-    margin: 0 30px 0 30px;  
+    margin: 0 30px 0 30px; 
 }
 
 .nav-link{
@@ -58,7 +58,6 @@ body{
 .card-post{
     border: 0.5px solid var(--green);
     border-radius: 15px;
-   
 }
 
 .post-subtitle {
@@ -69,17 +68,12 @@ body{
     color: var(--white);
 }
 
-.card-comment{
-   
-}
-
- /* ABOUT PAGE */
   .page-heading{
     margin-top: 5px;
     color: var(--green);
     font-weight: bolder;
  }
- 
+
  .cat-heading{
     margin-top: 5px;
     color: var(--green);
@@ -89,7 +83,6 @@ body{
     color: var(--grey);
   }
 
-  /* STYLING TO INPUT FIELDS ON FORMS */
 input{
     margin-left: 5px;
     background-color: transparent;
