@@ -82,6 +82,8 @@ class DeleteCommentView(View):
         # Check if the user is authorised to delete the comment
         if comment.fname == request.user.username:
             comment.delete()
+        elif request.user.username == 'admin':
+            comment.delete()
         else:
             print('ttt')
             # call 404
