@@ -88,6 +88,13 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{comment.body}}
+                     {% if request.user.username == comment.fname %}
+                    <form action="{% url 'delete_comment' comment.id %}" method="post" class="mt-2">
+                        {% csrf_token %}
+                        <input type="hidden" name="comment_id" value="{{ comment.id }}">
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                    {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
