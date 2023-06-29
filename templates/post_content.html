@@ -88,6 +88,15 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{comment.body}}
+
+                    <!-- edit comment -->
+                    {% if request.user.username == comment.fname or request.user.username == 'admin' %}
+                    <form action="{% url 'edit_comment' comment.id %}" method="get" class="d-inline">
+                        <button type="submit" class="btn btn-sm form-btn">Edit</button>
+                    </form>
+                    {% endif %}
+
+                    <!-- delete comment -->
                      {% if request.user.username == comment.fname or request.user.username == 'admin' %}
                     <form action="{% url 'delete_comment' comment.id %}" method="post" class="d-inline">
                         {% csrf_token %}
@@ -96,12 +105,7 @@
                     </form>
                     {% endif %}
 
-                    <!-- edit comment -->
-                    {% if request.user.username == comment.fname or request.user.username == 'admin' %}
-                    <form action="{% url 'edit_comment' comment.id %}" method="get" class="d-inline">
-                        <button type="submit" class="btn btn-sm form-btn">Edit</button>
-                    </form>
-                    {% endif %}
+                    
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}
