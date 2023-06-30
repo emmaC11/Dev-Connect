@@ -11,8 +11,8 @@ This platform connects developers and empowers innovation. Here, you can find re
         * [Wireframes](#wireframes)
 * [Features](#features)
     * [Home](#home-screen)
-    * [About](#about-screen)
     * [Post Content](#post-content)
+    * [About](#about-section)
     * [Login](#login-section)
     * [Logout](#logout-section)
     * [Register](#register-section)
@@ -28,14 +28,12 @@ This platform connects developers and empowers innovation. Here, you can find re
     * [Development Structure](#dev-structure)
 * [Deployment](#deployment)
     * [Project Creation](#project-creation)
-    * [GitHub Pages](#deployment-to-github-pages)
-    * [Run Locally](#run-locally)
+    * [Heroku Deployment](#heroku-deployment)
 
 * [Credits/References](#creditsreferences)
     * [Technologies Used](#technologies-used)
     * [Content & Media](#content--media)
     * [Code](#code)
-    * [Achknowledgements](#achknowledgements)
 
 # **User Experience & Design**
 
@@ -110,7 +108,7 @@ The wireframes were created using Balsamiq Wireframes. These were created before
 * When a user is not logged in, the navigation displays 4 headings - home, about, login, register
 * When a user is logged in, the navigation displays 4 headings - home, about, logout, admin.
 * The logged in users username is dispayed on the right hand side with the sites slogan.
-* The home screen displays a post list, each card contains the post heading & the category the post relates to, there are 4 categories: Interview tips/tricks, Coding Resources, Career Development, AI, Tech Explained.
+* The home screen displays a post list, each card contains the post heading & the category the post relates to, there are 5 categories: Interview tips/tricks, Coding Resources, Career Development, AI, Tech Explained.
 * The post headings are displayed with thick green text with a deep navy background colour. The headings can be clicked to open the post. The text colour is white to make it visible over the dark background.
 * Pagination is in place when there is over 9 posts being displayed on the screen.
 ![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/0d0282a9-4801-4a45-a061-e4f12425bf45)
@@ -253,7 +251,7 @@ I used the following commands throughout the development of this project:
 * **python3 manage.py migrate** - This command migrates any database model changes.
 * **pip3 freeze --local > requirements.txt** - This command updates requirements.txt file after any installations.
 
-## Deployment to Heroku
+## Heroku Deployment
 1. Open Heroku & create a free account.
 2. From the dashboard page, click the 'create new app' button.
 3. Create an app name, this must be unique & choose your region (either America or Europe).
