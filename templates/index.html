@@ -11,15 +11,14 @@
                 <div class="col-md-4 mb-3">
                     <div class="card mb-4">
                         <div class="card-header">
-                            <lord-icon src="https://cdn.lordicon.com/fpmskzsv.json"
-                            trigger="loop"
-                            delay="1000"
-                            colors="primary:#64ffda"
-                            style="width:35px;height:35px">
+                            <lord-icon src="https://cdn.lordicon.com/fpmskzsv.json" trigger="loop" delay="1000"
+                                colors="primary:#64ffda" style="width:35px;height:35px">
                             </lord-icon>
                         </div>
                         <div class="card-body">
-                            <a class="post-links" href="{% url 'post_content' post.slug%}"> <h2 class="card-title">{{post.title}}</h2></a>
+                            <a class="post-links" href="{% url 'post_content' post.slug%}">
+                                <h2 class="card-title">{{post.title}}</h2>
+                            </a>
                             <hr />
                             <p class="card-text text-muted h6">{{post.category}}</p>
                         </div>
