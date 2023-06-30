@@ -166,7 +166,34 @@ Event listener testing focuses on verifying the functionality and responsiveness
 * Like buttons are disabled & not triggering events when user is not logged in. 
 
 ## Manual Testing
-add content
+| Feature                 | Expect                                                 | Action             | Result            |
+| -------------           | -------------                                          | ------------------ | -------           |
+| Github Pages Deployment Link | When clicked the Dev Connect website opens in a tab on chosen browser  | Clicked deployment link in about section in GitHub Repo     | Website loaded sucessfully in tab |
+| Website Responsiveness | When the website is viewed on different screen sizes, it is reponsive & resizes appropriately | Open chrome dev tools and toggle through each of the different screen sizes | Website was fully responsive |
+| Navigation - home | When clicked the homepage is displayed to the user with post list | Clicked '/home' button | Homepage displayed with post list |
+| Navigation - about | When clicked the about page is displayed to the user | Clicked '/about' button | About page is displayed |
+| Navigation - login | When clicked the login page is displayed to the user | Clicked '/login' button | Login page is displayed |
+| Navigation - register | When clicked the register page is displayed to the user | Clicked '/register' button | Register page is displayed |
+| Display post - no account user | When post title is clicked the post content should display. Like button should be disabled & comment form not visible. | Clicked 'Job Positions in Tech'heading | Post is displayed, like & comment functionality is disabled |
+| User Login | User fills out login form & is signed in successfully | Clicked '/login' button, typed username & password into input fields, click submit | User is logged in successfully, indicated by username visible in slogan |
+| User Logout | User is logged out from account | Clicked '/logout' button in nav & form | User is logged out successfully, indicated by username not visible in slogan |
+| User Login - empty username field | User fills out password field & login is not successful due to missing fields | Clicked '/login' button, typed password into input field, click submit | Form is not submitted, warning that username field needs to be filled out |
+| User Login - incorrect password field | Login not successful due to incorrect password | Clicked '/login' button, typed username & incorrect password into input fields | Form is not submitted, warning stating the username and/or password you specified are not correct. |
+| Register | New account created, user logged in sucessfully & has like & comment functionality | Clicked '/register' button, completed register form with relevant details | Form is submitted succesfully, new user account is created, like & comment functionality working on posts. |
+| Register - existing username | New account created not created as username already exists in database | Clicked '/register' button, completed register form with username that is currently in db | Form is not submitted, warning stating that a user with that username already exists.|
+| Like Posts | User can click like button on post & like count is incremented | Clicked '/login' button, entered credentials, clicked'Python 101' post, clicked like icon| Like button enabled, like count incremented|
+| Comment | User can comment on post(s) | Clicked '/login' button, entered credentials, clicked 'Python 101' post, in comment body typed 'Does anyone have any Python resources they would recommend?'| Comment posted successfully.
+| Comment - edit | User can edit their own comments | Clicked '/login' button, entered credentials, clicked 'Python 101' post, clicked edit button beside comment, alter text | Comment edited successfully. |
+| Comment - edit & delete, other user | Users cannot edit or delete other users comments, buttons are hidden | Clicked '/login' button, entered credentials, clicked 'Job Positions in tech' post,| Comment cannot be edited or deleted, buttons are hidden |
+| Comment - delete | User can delete their own comments | Clicked '/login' button, entered credentials, clicked 'Python 101' post, clicked delete button beside comment | Comment deleted successfully. |
+| Admin Comment - edit | Admin user can edit comments within UI | Clicked '/login' button, entered admin credentials, clicked 'Python 101' post, clicked edit button beside comment, alter text | Comment edited successfully.|
+| Admin Comment - delete | Admin user can delete comments within UI | Clicked '/login' button, entered admin credentials, clicked 'Python 101' post, clicked delete button beside comment | Comment deleted successfully.|
+| Admin Post - delete posts| Admin user can delete posts within UI | Clicked '/login' button, entered admin credentials, clicked 'New Test Post' post, clicked delete button beneath title | Post deleted successfully.|
+| Admin Post - draft post | Admin user can create posts within admin panel | Clicked '/login' button, entered admin credentials, clicked 'admin' in navigation bar, clicked add post button in blog section. Title: Test Post Author: admin Content: test post content Image: local image Cateogry: Developer Tips Status: Draft| Draft created successfully, not visible in post list on UI|
+| Admin Post - published post | Admin user can create posts within admin panel | Clicked '/login' button, entered admin credentials, clicked 'admin' in navigation bar, clicked posts section & selected 'test post' to be edited. Changed status from draft to published| Post published successfully, visible in post list on UI|
+| Admin Post - edit post | Admin user can create posts within admin panel | Clicked '/login' button, entered admin credentials, clicked 'admin' in navigation bar, clicked posts section & selected 'test post' to be edited. Changed content field| Post content edited successfully, visible in post list on UI|
+| Pagination | Pagination feature is enabled when post list is greater than 9 | Clicked '/login' button, entered admin credentials, clicked 'admin' in navigation bar, clicked posts section & created 3 new test posts| Pagination displaying as expected, next & previous buttons visible|
+
 
 ## Responsive Testing
 * The website was tested on several devices and screen sizes to ensure it was responsvie regardless of the screen size. It has been tested on desktop, Ipad Mini, Ipad Air, Iphone 5, Samsung Galaxy S8+, Iphone X, Iphone SE. Mobile devices have been tested in portrait and landscape mode. The site has been tested in Chrome, Edge, FireFox & Brave browsers.
