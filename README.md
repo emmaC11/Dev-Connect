@@ -92,7 +92,7 @@ The website follows a minimalistic design approach for a more professional look.
 The website uses a deep nay colour palette with pops of green. The primary colours used throughout the website are navy (#0a192f), white (#be83f1), green (#e6f1ff), purple (#AA00FF) & grey (#8892b0) I wanted to try something different for my colour scheme, something that is not seen in mainstream everyday.
 
 ## Typography
-Content throughout the site is with NTR google font.
+Content throughout the site is with NTR google font. Headings have a '/' before the text for an aesthetic feel and visually appealing style.
 
 ## Wireframes
 The wireframes were created using Balsamiq Wireframes. These were created before dev started so production site design may vary slightly to wireframes.
@@ -261,6 +261,7 @@ I used the following commands throughout the development of this project:
 
 ## Code
 * I referenced the sample blog from [CI content]((https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+JSE_PAGPPF+2021_Q2/courseware/30137de05cd847d1a6b6d2c7338c4655/c3bd296fe9d643af86e76e830e1470dd/)), this provided helpful snippets throughout my project for layouts, views, models, etc
+* I worked on a [personal project](https://github.com/emmaC11/ec-portfolio) a couple months ago which I referenced. The code used bootstrap & followed a similar design theme.
 * I used chat-gpt to generate sample content for my site & to write content for readme. I also used it to troubleshoot different errors such as line too long & errors in views etc. It was very helpful when working on the edit comment feature.
 * I referenced the following GitHub repo's throughout for guidance, VeganEat helped with the delete comment functionality. All wonderful ladies! [VeganEat](https://github.com/KarinOldbring/vegan-a-eat/tree/main),[F1 Booking System](https://github.com/Grawnya/f1-dublin-race-ticket-booking-system/tree/main#heroku-deploy), [Where-Next](https://github.com/AngMaher/PP4-Where-Next/)
 
