@@ -160,6 +160,11 @@ ADD SS
 
 I have used the PEP8 Linter to validate my code. It is activated within my code editor (Visual Studio Code). I had lots of 'lines too long' & 'whitespace' errors. I split lines where applicable, but I had to use #noqa (meaning line(s) is ignored by linters & validators) in settings.py as these lines could not be split without causing errors. I installed a [VS Extension](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces#:~:text=At%20any%20time%2C%20you%20can,type%20%22Trailing%20Spaces%3A%20Highlight%22) that highlights whitespace within the code. Throughout development I have been making tweaks to my code to ensure there are no errors. There are now no errros in my code. View the PEP8 documentation [here](https://peps.python.org/pep-0008/)
 
+## Event Listener Testing
+Event listener testing focuses on verifying the functionality and responsiveness of event listeners within a web application.
+* All button clicks trigger an event on the site.
+* Like buttons are disabled & not triggering events when user is not logged in. 
+
 ## Manual Testing
 add content
 
@@ -170,6 +175,10 @@ add content
 * The Lighthouse tool in Chrome DevTools is used to test a websites performance & accessibility. It is an open-source automated tool used to improve the quality of webpages. 
 When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
 ![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/2aa9a132-6c3a-4d07-8a3c-d1959a08ba0a)
+
+## Event Listener Testing
+* All button clicks trigger an event on the site.
+* Like buttons are disabled & not triggering events when user is not logged in. 
 
 ## Bugs Identified During Development & Testing
 * Site would not run locally as I did not have gitpod server in allowed_hosts.
