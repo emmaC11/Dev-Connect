@@ -153,7 +153,7 @@ The admin super user can add posts within the posts section. One thing to note i
 # **Testing**
 ## Validator Testing
 * To verify that the HTML code was written to the best standard, I conducted validator testing with the W3C Markup Validator. I fixed the errors and warnings and currently there are no errors or warnings in the HTML code.
-ADD SS
+![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/ce1b1495-346c-4fcb-a77e-b1a77fda0399)
 
 * CSS styling was validated using the W3C CSS Validation Service to ensure the code was written to the expected standard. No errors were found when passing the code through the W3C CSS validator.
 ![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/10c56d43-9114-46f7-8340-49031808409b)
