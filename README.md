@@ -203,6 +203,9 @@ Event listener testing focuses on verifying the functionality and responsiveness
 When I tested my website, an audit report was returned indicating that my website has high performance and is accessible.
 ![image](https://github.com/emmaC11/Dev-Connect/assets/83119583/2aa9a132-6c3a-4d07-8a3c-d1959a08ba0a)
 
+## User Testing
+The site has been tested regularly during development. After the site was completed I reached out to some fellow students & asks them to test the site & provide feedback.
+
 ## Event Listener Testing
 * All button clicks trigger an event on the site.
 * Like buttons are disabled & not triggering events when user is not logged in. 
